@@ -18,9 +18,7 @@ const Navbar = () => {
                 </div>
 
                 <div className='btn-container'>
-                    <button className='btn' >
-
-                    </button>
+                 
 
                 </div>
             </div>

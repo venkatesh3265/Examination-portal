@@ -1,10 +1,11 @@
 const FormRow = ({ type, name, value, handleChange, labelText }) => {
     return (
-      <div className=''>
-        <label htmlFor={name} className='form-label'>
-          {labelText || name}
-        </label>
-        {type === 'radio' ? (
+      <div className='form-row'>
+      <label htmlFor={name} className='form-label'>
+        {labelText || name}
+      </label>
+
+      {type === 'radio' ? (
         <>
           {value.map((option, index) => (
             <div key={index}>
@@ -28,7 +29,7 @@ const FormRow = ({ type, name, value, handleChange, labelText }) => {
           className='form-input'
         />
       )}
-      </div>
+    </div>
     );
   };
   
